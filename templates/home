@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Services</title>
+    <link rel="stylesheet" href="{% static 'monProjetV1/css/home.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ServiceTest</div>
+            <div class="nav-links"> 
+                <a href="{% url 'home' %}">Accueil</a>
+                <a href="{% url 'services' %}">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Bienvenue sur ServiceHome</h1>
+            <p>Découvrez nos services professionnels adaptés à vos besoins. Nous vous accompagnons dans tous vos projets avec expertise et innovation.</p>
+            <a href="{% url 'services' %}" class="cta-button">Découvrir nos services</a>
+        </section>
+
+        <section class="services" id="services">
+            <div class="card">
+                <h3>Service 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="card">
+                <h3>Service 2</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="card">
+                <h3>Service 3</h3>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

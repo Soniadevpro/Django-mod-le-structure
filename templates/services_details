@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails du Service</title>
+    <link rel="stylesheet" href="{% static 'monProjetV1/css/services_details.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>SERVICE Test Details</h1>
+            <p>Découvrez tous les détails de notre service premium</p>
+        </header>
+
+        <main class="service-details">
+            <div class="detail-section">
+                <h2>Description du Service</h2>
+                <p>Notre service offre une solution complète et personnalisée pour répondre à vos besoins spécifiques. Nous combinons expertise technique et accompagnement personnalisé pour garantir votre satisfaction.</p>
+            </div>
+
+            <div class="features-list">
+                <div class="feature-item">
+                    <h3>Caractéristique 1</h3>
+                    <p>Une solution innovante qui s'adapte à vos besoins avec une flexibilité maximale.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Caractéristique 2</h3>
+                    <p>Support technique disponible 24/7 pour vous accompagner dans vos projets.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Caractéristique 3</h3>
+                    <p>Des outils performants et une interface intuitive pour une utilisation optimale.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Caractéristique 4</h3>
+                    <p>Rapports détaillés et analyses approfondies pour suivre vos performances.</p>
+                </div>
+            </div>
+
+            <div class="pricing">
+                <h2>Tarification</h2>
+                <div class="price">99€ / mois</div>
+                <p>Accès complet à toutes les fonctionnalités</p>
+            </div>
+
+            <div class="button-container">
+                <a href="{% url 'home' %}" class="button primary">Retour à l'accueil</a>
+                <a href="{% url 'services' %}" class="button secondary">Voir tous les services</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

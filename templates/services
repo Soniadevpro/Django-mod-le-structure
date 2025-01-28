@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Test</title>
+    <link rel="stylesheet" href="{% static 'monProjetV1/css/services.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Nos Services</h1>
+        
+        <div class="intro">
+            <p>Découvrez notre gamme complète de services conçus pour répondre à vos besoins.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <h2>Service 1</h2>
+                <p>Une solution complète pour optimiser vos performances.</p>
+                <div class="buttons">
+                    <a href="{% url 'services_details'  %}">Détails</a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <h2>Service 2</h2>
+                <p>Des outils innovants et une approche personnalisée.</p>
+                <div class="buttons">
+                    <a href="{% url 'services_details'  %}">Détails</a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <h2>Service 3</h2>
+                <p>Un accompagnement sur mesure avec des solutions adaptées.</p>
+                <div class="buttons">
+                    <a href="{% url 'services_details'  %}">Détails</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <a href="{% url 'home' %}" class="secondary">Retour à l'accueil</a>
+        </div>
+    </div>
+</body>
+</html>
