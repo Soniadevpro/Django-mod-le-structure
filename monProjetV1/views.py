@@ -12,6 +12,8 @@ def services(request):
     return render(request, "services")
 def contact(request):
     return render(request, 'contact')
+def register(request):
+    return render(request, 'register')
 def services_detail(request):
     return render(request, 'services_details')
 # Create your views here.
